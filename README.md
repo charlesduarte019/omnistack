@@ -1,4 +1,2 @@
 # omnistack
-Curso do Rocketseat Online
-
-Acesse o branch com a versão da Aula
+Curso da Semana OmniStack 11.0
