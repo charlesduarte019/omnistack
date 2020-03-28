@@ -16,3 +16,11 @@ $ npx knex migrate:make create_incidents
 $ npx knex migrate:lastest
 $ npx knex migrate:rollback # Executa o Metodo DOWN
 ```
+
+## React
+```shell
+$ npx create-react-app frontend
+$ npm install react-icons
+$ npm install react-router-dom
+$ npm install axios
+```
