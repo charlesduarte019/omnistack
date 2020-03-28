@@ -9,3 +9,18 @@ services:
     ports:
       - 3333:3333
     command: npm start
+  front:
+    build: ./frontend
+    depends_on:
+      - back
+    links:
+      - back
+    volumes:
+      - ./frontend:/usr/src/omnistack/
+      - /usr/src/omnistack/node_modules
+    ports:
+      - 3000:3000
+    environment:
+      - HOST=0.0.0.0
+      - CI=true
+    command: npm start
