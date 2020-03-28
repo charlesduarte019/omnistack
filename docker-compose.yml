@@ -21,6 +21,7 @@ services:
     ports:
       - 3000:3000
     environment:
+      - CI=true
       - HOST=0.0.0.0
       - CI=true
     command: npm start
