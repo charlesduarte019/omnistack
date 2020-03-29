@@ -5,6 +5,9 @@ $ npm install -D nodemon
 $ npm install -s knex
 $ npm install sqlite3
 $ npm install cors
+$ npm install @react-navigation/native
+$ npm install @react-navigation/stack
+$ npm install intl
 ```
 
 ## Knex
@@ -23,4 +26,11 @@ $ npx create-react-app frontend
 $ npm install react-icons
 $ npm install react-router-dom
 $ npm install axios
+```
+
+## Expo
+```shell
+$ expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+$ expo install expo-constants
+$ expo install expo-mail-composer
 ```
