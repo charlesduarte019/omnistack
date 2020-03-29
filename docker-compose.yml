@@ -13,8 +13,6 @@ services:
     build: ./frontend
     depends_on:
       - back
-    links:
-      - back
     volumes:
       - ./frontend:/usr/src/omnistack/
       - /usr/src/omnistack/node_modules
