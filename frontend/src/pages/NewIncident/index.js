@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -11,8 +11,6 @@ export default function NewIncident() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [value, setValue] = useState('');
-
-  const history = useHistory();
 
   const ongId = localStorage.getItem('ongId'); 
 
@@ -32,7 +30,9 @@ export default function NewIncident() {
         }
       });
 
-      history.push('/profile');
+      setTitle('');
+      setDescription('');
+      setValue('');
     } catch (err) {
       alert('Erro ao cadastrar caso, tente novamente.');
     }
